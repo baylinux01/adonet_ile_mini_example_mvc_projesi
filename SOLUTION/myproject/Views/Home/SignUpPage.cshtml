@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Registration Page";
+}
+
+<form style="margin-left:500px; margin-top:40px;" action="/Home/SignUp" method="post">
+<h3>Tüm alanlar sadece harf, sayı ve nokta(.), alt çizgi(_), tire(-) karakterlerini içerebilir</h3>
+<label class="form-label" for="name">Adınızı Giriniz</label>
+<input style="width:230px; margin-bottom:20px;" class="form-control" type=text id="name" name="name" placeholder="Adınızı Giriniz">
+<label class="form-label" for="surname">Soyadınızı Giriniz</label>
+<input style="width:230px; margin-bottom:20px;" class="form-control" type=text id="surname" name="surname" placeholder="Soyadınızı Giriniz">
+<label class="form-label" for="username">Kullanıcı Adınızı Giriniz</label>
+<input style="width:230px; margin-bottom:20px;" class="form-control" type=text id="username" name="username" placeholder="Kullanıcı Adınızı Giriniz">
+<label class="form-label" for="password1">Şifrenizi Giriniz</label>
+<input style="width:230px; margin-bottom:20px;" class="form-control" type=text id="password1" name="password1" placeholder="Şifrenizi Giriniz">
+<label class="form-label" for="password2">Şifrenizi Tekrar Giriniz</label>
+<input style="width:230px; margin-bottom:20px;" class="form-control" type=text id="password2" name="password2" placeholder="Şifrenizi Tekrar Giriniz">
+<input style="margin-left:140px" class="btn btn-success" type=submit id="submit" name="submit" value="Kayıt Ol">
+</form>

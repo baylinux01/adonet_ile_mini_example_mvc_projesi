@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET 8 MVC (netcoredbg)",
+      "type": "gdb",
+      "request": "launch",
+      "target": "dotnet",
+      "arguments": "/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/myproject.dll",
+      "cwd": "/home/baylinux/Desktop/SOLUTION/myproject",
+      "valuesFormatting": "parseText",
+      "miDebuggerPath": "/home/baylinux/netcoredbg/netcoredbg",
+      "miMode": "gdb",
+      "stopAtEntry": true          // <-- eklendi
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/baylinux/Desktop/SOLUTION/myproject/myproject.csproj": {}
+  },
+  "projects": {
+    "/home/baylinux/Desktop/SOLUTION/myproject/myproject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/baylinux/Desktop/SOLUTION/myproject/myproject.csproj",
+        "projectName": "myproject",
+        "projectPath": "/home/baylinux/Desktop/SOLUTION/myproject/myproject.csproj",
+        "packagesPath": "/home/baylinux/.nuget/packages/",
+        "outputPath": "/home/baylinux/Desktop/SOLUTION/myproject/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/baylinux/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.5.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/baylinux/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
