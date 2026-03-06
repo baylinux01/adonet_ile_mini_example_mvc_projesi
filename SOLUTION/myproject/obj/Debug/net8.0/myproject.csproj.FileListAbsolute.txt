@@ -49,3 +49,25 @@
 /home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
 /home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/MySqlConnector.dll
 /home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/BCrypt.Net-Next.dll
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/configuration/appsettings.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/licenses/bsd-3-clause/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/licenses/gpl-2.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/licenses/mit/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/licenses/universal-foss-exception-1.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/bcrypt.net-next/4.0.3/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/bouncycastle.cryptography/2.6.2/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/google.protobuf/3.32.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/k4os.compression.lz4.streams/1.3.8/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/k4os.compression.lz4/1.3.8/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/k4os.hash.xxhash/1.0.8/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/microsoft.extensions.dependencyinjection.abstractions/8.0.2/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/microsoft.extensions.logging.abstractions/8.0.2/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/mysql.data/9.5.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/mysqlconnector/2.5.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/system.configuration.configurationmanager/8.0.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/system.diagnostics.eventlog/8.0.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/system.io.pipelines/6.0.3/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/system.security.cryptography.protecteddata/8.0.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/system.security.permissions/8.0.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/system.windows.extensions/8.0.0/index.json
+/home/baylinux/Desktop/SOLUTION/myproject/bin/Debug/net8.0/Third Party Licences (Auto Generated)/packages/nuget.org/zstdsharp.port/0.8.6/index.json

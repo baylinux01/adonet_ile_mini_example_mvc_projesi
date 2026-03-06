@@ -81,61 +81,12 @@ namespace myproject.Repositories
             {
                 return affected;
             }
-            // AppUser oldAppUser=null;
-            // oldAppUser = GetAppUserById(appUser.Id);
-            // if(oldAppUser==null)
-            // {
-            //     oldAppUser = GetAppUserByUsername(appUser.Username);
-            // }
-            // if(oldAppUser==null)
-            // {
-            //     return affected;
-            // }  
+            
             MySqlConnection con = null;
             try
             {
-                // con = GetCon();
-                // MySqlCommand com = new MySqlCommand($"update AppUsers set name=@name,surname=@surname,username=@username,password=@password where id=@id;", con);
-                // if (appUser != null && appUser.Name != null)
-                // {
-                //     com.Parameters.AddWithValue("@name", appUser.Name);
-                // }
-                // else
-                // {
-                //     com.Parameters.AddWithValue("@name", oldAppUser.Name);
-                // }
-                // if (appUser != null && appUser.Surname != null)
-                // {
-                //     com.Parameters.AddWithValue("@surname", appUser.Surname);
-                // }
-                // else
-                // {
-                //     com.Parameters.AddWithValue("@surname", oldAppUser.Surname);
-                // }
-                // if (appUser != null && appUser.Username != null)
-                // {
-                //     com.Parameters.AddWithValue("@username", appUser.Username);
-                // }
-                // else
-                // {
-                //     com.Parameters.AddWithValue("@username", oldAppUser.Username);
-                // }
-                // if (appUser != null && appUser.Password != null)
-                // {
-                //     com.Parameters.AddWithValue("@password", 
-                //     BCrypt.Net.BCrypt.EnhancedHashPassword(appUser.Password,
-                //     Convert.ToInt32(Environment.GetEnvironmentVariable("BCRYPT_DEGREE"))));
-                // }
-                // else
-                // {
-                //     com.Parameters.AddWithValue("@password", 
-                //     GetHashedPasswordByUsername(oldAppUser.Username));
-                // }
-               
-                // com.Parameters.AddWithValue("@id", oldAppUser.Id);
-                
                 con = GetCon();
-                MySqlCommand com = new MySqlCommand($"update AppUsers set name=coalesce(@name,name),surname=coalesce(@surname,surname),username=coalesce(@username,username),password=coalesce(@password,password) where id=coalesce(@id,(select id from AppUsers where username=@username limit 1));", con);
+                MySqlCommand com = new MySqlCommand($"update AppUsers set name=coalesce(@name,name),surname=coalesce(@surname,surname),username=coalesce(@username,username),password=coalesce(@password,password) where case when @id is not null then id=@id else username=@username));", con);
                 if (appUser != null && appUser.Name != null)
                 {
                     com.Parameters.AddWithValue("@name", appUser.Name);
