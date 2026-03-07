@@ -76,17 +76,26 @@ namespace myproject.Repositories
 
         private int UpdateAppUser(AppUser appUser)
         {
-            int affected = 0;
-            if (appUser == null || (appUser.Id<1  && appUser.Username == null))
-            {
-                return affected;
-            }
+			int affected=0;
+			if(appUser==null)
+			{
+				//return affected;
+				throw new ArgumentNullException("The User is desired to be updated cannot be null");
+			}
+			if((appUser.Id == null || appUser.Id<1) && appUser.Username == null)
+			{
+				//return affected;
+				throw new ArgumentException("id veya username gerekli");
+			}
+				
+            
             
             MySqlConnection con = null;
             try
             {
                 con = GetCon();
-                MySqlCommand com = new MySqlCommand($"update AppUsers set name=coalesce(@name,name),surname=coalesce(@surname,surname),username=coalesce(@username,username),password=coalesce(@password,password) where case when @id is not null then id=@id else username=@username));", con);
+                MySqlCommand com = new MySqlCommand($"update AppUsers set name=coalesce(@name,name),surname=coalesce(@surname,surname),username=coalesce(@username,username),password=coalesce(@password,password)"+
+                "where  (@id is not null and id=@id) or (@id is null and @username is not null and username=@username);", con);
                 if (appUser != null && appUser.Name != null)
                 {
                     com.Parameters.AddWithValue("@name", appUser.Name);
